@@ -1,0 +1,12 @@
+# Read a Image
+# 2021-5-31
+# TBSI, THU
+# Hengxi Zhang
+
+from matplotlib import image as mpimg
+from matplotlib import pyplot as plt
+
+I = mpimg.imread(r'F:\xxx.jpg')  # Put image into variable I
+print(I.shape)  # M x N
+plt.imshow(I)
+plt.show()
