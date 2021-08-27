@@ -1,0 +1,21 @@
+# Visualization of a 2D vector field
+# 2021-8-27
+# THU
+# ZHX
+
+from matplotlib import pyplot as plt
+import numpy as np
+import seaborn as sns
+
+
+
+x = np.arange(-1, 1, .01)
+y = np.arange(-1, 1, .01)
+xx, yy = np.meshgrid(x, y)   #
+V = np.log(np.sqrt(xx**2 + yy**2))
+
+fig = plt.figure()
+ax = fig.subplots(1,1)
+# sns.heatmap(V, annot=True)  #
+sns.heatmap(V)
+plt.show()
